@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { StyleSheet } from 'react-native'
 
-import Pages from './routes/'
-import responsive from './utils/responsive'
+import Pages from './routes'
 
 export default class App extends Component {
     constructor(props){

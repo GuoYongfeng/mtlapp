@@ -3,12 +3,13 @@ import { StyleSheet, Image } from 'react-native'
 import Navigation, { TabNavigator, TabBarBottom } from 'react-navigation'
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
-import { Home, User, Products, ShopCart } from './HomeTabs'
+import HomeScreen from '../screen/home/HomeScreen'
+import UserScreen from '../screen/user/UserScreen'
+import ProductsScreen from '../screen/product/ProductsScreen'
+import ShopCartScreen from '../screen/shop/ShopCartScreen'
 
 import { logWarm, log } from '../utils/log'
 import request from '../utils/request'
-
-console.log(request.get)
 
 //创建tab页的顶部样式
 const styles = StyleSheet.create({
@@ -27,23 +28,23 @@ const styles = StyleSheet.create({
 })
 
 export default TabNavigator({
-    'Home': { screen: Home },
-    'Products': { screen: Products },
-    'ShopCart': { screen: ShopCart },
-    'User': { screen: User }
+    'HomeScreen': { screen: HomeScreen },
+    'ProductsScreen': { screen: ProductsScreen },
+    'ShopCartScreen': { screen: ShopCartScreen },
+    'UserScreen': { screen: UserScreen }
 }, {
     navigationOptions: ({ navigation, screenProps }) => ({
         tabBarIcon: ({ focused, tintColor }) => {
             const { routeName } = navigation.state;
             let iconName;
 
-            if (routeName === 'Home') {
+            if (routeName === 'HomeScreen') {
                 iconName = `ios-apps${focused ? '' : '-outline'}`;
-            } else if (routeName === 'Products') {
+            } else if (routeName === 'ProductsScreen') {
                 iconName = `ios-add-circle${focused ? '' : '-outline'}`;
-            } else if (routeName === 'ShopCart') {
+            } else if (routeName === 'ShopCartScreen') {
                 iconName = `ios-basket${focused ? '' : '-outline'}`;
-            } else if (routeName === 'User') {
+            } else if (routeName === 'UserScreen') {
                 iconName = `ios-contact${focused ? '' : '-outline'}`;
             }
 
@@ -52,13 +53,13 @@ export default TabNavigator({
         tabBarLabel: ({focused, tintColor}) => {
             const { routeName } = navigation.state;
 
-            if (routeName === 'Home') { 
+            if (routeName === 'HomeScreen') { 
                 return '玩事'
-            } else if (routeName === 'Products') {
+            } else if (routeName === 'ProductsScreen') {
                 return '应用中心'
-            } else if (routeName === 'ShopCart') {
+            } else if (routeName === 'ShopCartScreen') {
                 return '购物中心'
-            } else if (routeName === 'User') {
+            } else if (routeName === 'UserScreen') {
                 return '我的'
             }
         }
