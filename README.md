@@ -34,3 +34,19 @@ rm -rf ./node_modules/react-native/local-cli/core/__fixtures__/files/package.jso
 - cmd + d 出现选项后，选择”remote js debugging“
 - 访问：http://localhost:8081/debugger-ui/
 - 打开控制台，切换到 console
+
+### 3、组件
+
+- 轮播组件：https://github.com/leecade/react-native-swiper
+- 提示组件：react-native-root-toast
+
+### 4、适配 & 分辨率
+
+- ./app/utils/response.js
+
+### 5、IOS 打包 APK
+
+- 打出jsbundle 资源包：http://blog.csdn.net/sinat_34380438/article/details/76614309
+- 按照 IOS 的流程打包：http://blog.csdn.net/sinat_34380438/article/details/52485342
+
+### 6、

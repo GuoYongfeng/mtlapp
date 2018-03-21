@@ -6,7 +6,15 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "ios": "react-native run-ios",
-    "android": "react-native run-android"
+    "android": "react-native run-android",
+    "build:ios": "react-native bundle --entry-file ./index.js --bundle-output ./ios/bundle/index.ios.jsbundle --platform ios --assets-dest ./ios/bundle --dev false"
+  },
+  "scripts-info": {
+    "start": "启动开发",
+    "test": "执行代码测试",
+    "ios": "启动调试 IOS 应用",
+    "android": "启动调试安卓应用",
+    "build:ios": "打包 IOS apk"
   },
   "dependencies": {
     "react": "^16.2.0",
