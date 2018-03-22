@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import {
     StyleSheet, View, Text, Image,
     TouchableOpacity,
@@ -7,7 +7,7 @@ import {
 import Swiper from 'react-native-swiper'
 import px from '../../utils/responsive'
 
-export default class GoodItem extends React.Component {
+export default class GoodItem extends PureComponent {
     constructor(props){
         super(props)
     }

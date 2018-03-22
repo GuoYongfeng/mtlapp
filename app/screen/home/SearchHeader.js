@@ -12,25 +12,25 @@ import px from '../../utils/responsive'
  */
 export default class SearchHeader extends Component {
     render() {
-        return <View style={styleSearchBar.header}>
-            <TouchableOpacity activeOpacity={0.9} onPress={() => this.shareTo()}>
-                <View style={styleSearchBar.back}>
-                    <Image source={{ uri: 'http://img.cdn.daling.com/data/files/mobile/img/dalingjia.jpg' }}
-                        style={styleSearchBar.shopLogo} />
-                    <Image style={styleSearchBar.headerShareImg}
-                        source={{ uri: require("../../images/icon-index-share") }} />
-                </View>
-            </TouchableOpacity>
-            <TouchableWithoutFeedback onPress={() => this.goSearch()}>
-                <View style={[styleSearchBar.headerSearchBar, {
-                    backgroundColor: '#fff'
-                }]}>
-                    <Image style={styleSearchBar.headerSearchImg}
-                        source={{ uri: require("../../images/icon-search-gray") }} />
-                    <Text allowFontScaling={false} style={styleSearchBar.headerSearchInput}>在<Text allowFontScaling={false} style={{ color: '#d0648f' }}>安心淘</Text>中搜索</Text>
-                </View>
-            </TouchableWithoutFeedback>
-        </View>
+        return (
+            <View style={styleSearchBar.header}>
+                <TouchableOpacity activeOpacity={0.9} onPress={() => this.shareTo()}>
+                    <View style={styleSearchBar.back}>
+                        <Image source={{ uri: 'http://img.cdn.daling.com/data/files/mobile/img/dalingjia.jpg' }}
+                            style={styleSearchBar.shopLogo} />
+                        <Image style={styleSearchBar.headerShareImg}
+                            source={{ uri: require("../../images/icon-index-share") }} />
+                    </View>
+                </TouchableOpacity>
+                <TouchableWithoutFeedback onPress={() => this.goSearch()}>
+                    <View style={styleSearchBar.headerSearchBar}>
+                        <Image style={styleSearchBar.headerSearchImg}
+                            source={{ uri: require("../../images/icon-search-gray") }} />
+                        <Text allowFontScaling={false} style={styleSearchBar.headerSearchInput}>在<Text allowFontScaling={false} style={{ color: '#d0648f' }}>安心淘</Text>中搜索</Text>
+                    </View>
+                </TouchableWithoutFeedback>
+            </View>
+        )
     }
     //跳转搜索页
     goSearch() {
@@ -82,7 +82,8 @@ const styleSearchBar = StyleSheet.create({
         justifyContent: "center",
         height: px(56),
         overflow: 'hidden',
-        marginLeft: px(10)
+        marginLeft: px(10),
+        backgroundColor: '#fff'
     },
     headerSearchImg: {
         marginLeft: px(16),

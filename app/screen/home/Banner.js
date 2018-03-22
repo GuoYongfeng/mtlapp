@@ -11,8 +11,10 @@ import {
 import Swiper from 'react-native-swiper'
 
 import px from '../../utils/responsive'
+import { log } from '../../utils/log'
 import request from '../../utils/request'
-const { width, height } = Dimensions.get('window')
+
+const deviceWidth = Dimensions.get('window').width;
 
 export default class Banner extends Component {
     constructor(props) {

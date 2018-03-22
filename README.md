@@ -68,3 +68,30 @@ $ react-native link react-native-fast-image
 - 也有可能是端口占用的问题。
 
 具体方案：https://www.jianshu.com/p/deb5df24a498
+
+### 8、调试过程崩溃：Thread 32: EXC_BAD_ACCESS (code=1, address=0x10)
+
+可以在 xcode 中点击暂停编译，或者找出具体问题。
+
+### 9、图片资源加载 Image
+
+```
+# 加载相对地址的图片资源(使用静态图片资源)
+<Image source={require('../../images/tinper.png')} />
+# 加载服务器图片资源
+<Image source={{uri: 'http://tinper.org/assets/images/tinperlogos32.png'}}
+                    style={{width:200,height:100}} />
+# 加载原生图片，安卓的res/drwable目录，或者ios对应的目录资源
+<Image source={{uri: 'launcher_icon'}} style={{width: 38, height: 38}} />);
+
+# 出错
+<Image source={{uri: require('../../images/tinper.png')}} />
+# 不显示
+<Image source={{uri: 'http://tinper.org/assets/images/tinperlogos32.png'}} />
+```
+
+- 图片资源缓存
+- 长列表图片，如：瀑布流图片
+- 图片base64
+- ImageBackground：
+
