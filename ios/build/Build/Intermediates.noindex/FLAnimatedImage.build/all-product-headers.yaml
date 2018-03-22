@@ -1,0 +1,38 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/guoyongfeng/Documents/fed/mtlapp/ios/build/Build/Products/Debug-iphonesimulator/FLAnimatedImage.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FLAnimatedImage-Swift.h",
+          'external-contents': "/Users/guoyongfeng/Documents/fed/mtlapp/ios/build/Build/Products/Debug-iphonesimulator/FLAnimatedImage.framework/Headers/FLAnimatedImage-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "FLAnimatedImage.h",
+          'external-contents': "/Users/guoyongfeng/Documents/fed/mtlapp/node_modules/react-native-fast-image/ios/Vendor/SDWebImage/Vendors/FLAnimatedImage/FLAnimatedImage/FLAnimatedImage.h"
+        },
+        {
+          'type': 'file',
+          'name': "FLAnimatedImageView.h",
+          'external-contents': "/Users/guoyongfeng/Documents/fed/mtlapp/node_modules/react-native-fast-image/ios/Vendor/SDWebImage/Vendors/FLAnimatedImage/FLAnimatedImage/FLAnimatedImageView.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/guoyongfeng/Documents/fed/mtlapp/ios/build/Build/Products/Debug-iphonesimulator/FLAnimatedImage.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/guoyongfeng/Documents/fed/mtlapp/ios/build/Build/Intermediates.noindex/FLAnimatedImage.build/Debug-iphonesimulator/FLAnimatedImage.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

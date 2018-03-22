@@ -37,8 +37,12 @@ rm -rf ./node_modules/react-native/local-cli/core/__fixtures__/files/package.jso
 
 ### 3、组件
 
+- 图标字体组件：react-native-vector-icons
 - 轮播组件：https://github.com/leecade/react-native-swiper
 - 提示组件：react-native-root-toast
+- FastImage 组件：https://github.com/DylanVann/react-native-fast-image
+- RN 组件 ImageBackground：可以将一个图片当做背景来使用
+- FlatList & ScrollView：FlatList 可以在滚动的时候隐藏屏幕外的无用节点，可以提高列表性能，尤其是列表非常长的时候。
 
 ### 4、适配 & 分辨率
 
@@ -49,4 +53,18 @@ rm -rf ./node_modules/react-native/local-cli/core/__fixtures__/files/package.jso
 - 打出jsbundle 资源包：http://blog.csdn.net/sinat_34380438/article/details/76614309
 - 按照 IOS 的流程打包：http://blog.csdn.net/sinat_34380438/article/details/52485342
 
-### 6、
+### 6、使用 link 命令将组件加入到原生代码里
+
+```
+$ react-native link react-native-fast-image
+```
+
+执行完毕重新运行模拟器
+
+### 7、打包出现 `No bundle URL present` 问题
+
+- 有可能是因为网络代理的问题出现的。
+- 也有可能是 ios/build 资源影响的，那么直接 rm -rf ios/build 即可。
+- 也有可能是端口占用的问题。
+
+具体方案：https://www.jianshu.com/p/deb5df24a498

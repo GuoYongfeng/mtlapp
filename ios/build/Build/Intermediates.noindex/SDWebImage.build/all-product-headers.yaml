@@ -1,0 +1,107 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/guoyongfeng/Documents/fed/mtlapp/ios/build/Build/Products/Debug-iphonesimulator/SDWebImage",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "FLAnimatedImage.h",
+          'external-contents': "/Users/guoyongfeng/Documents/fed/mtlapp/node_modules/react-native-fast-image/ios/Vendor/SDWebImage/Vendors/FLAnimatedImage/FLAnimatedImage/FLAnimatedImage.h"
+        },
+        {
+          'type': 'file',
+          'name': "FLAnimatedImageView+WebCache.h",
+          'external-contents': "/Users/guoyongfeng/Documents/fed/mtlapp/node_modules/react-native-fast-image/ios/Vendor/SDWebImage/SDWebImage/FLAnimatedImage/FLAnimatedImageView+WebCache.h"
+        },
+        {
+          'type': 'file',
+          'name': "FLAnimatedImageView.h",
+          'external-contents': "/Users/guoyongfeng/Documents/fed/mtlapp/node_modules/react-native-fast-image/ios/Vendor/SDWebImage/Vendors/FLAnimatedImage/FLAnimatedImage/FLAnimatedImageView.h"
+        },
+        {
+          'type': 'file',
+          'name': "MKAnnotationView+WebCache.h",
+          'external-contents': "/Users/guoyongfeng/Documents/fed/mtlapp/node_modules/react-native-fast-image/ios/Vendor/SDWebImage/SDWebImage/MKAnnotationView+WebCache.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDImageCache.h",
+          'external-contents': "/Users/guoyongfeng/Documents/fed/mtlapp/node_modules/react-native-fast-image/ios/Vendor/SDWebImage/SDWebImage/SDImageCache.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDImageCacheConfig.h",
+          'external-contents': "/Users/guoyongfeng/Documents/fed/mtlapp/node_modules/react-native-fast-image/ios/Vendor/SDWebImage/SDWebImage/SDImageCacheConfig.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageCompat.h",
+          'external-contents': "/Users/guoyongfeng/Documents/fed/mtlapp/node_modules/react-native-fast-image/ios/Vendor/SDWebImage/SDWebImage/SDWebImageCompat.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageDecoder.h",
+          'external-contents': "/Users/guoyongfeng/Documents/fed/mtlapp/node_modules/react-native-fast-image/ios/Vendor/SDWebImage/SDWebImage/SDWebImageDecoder.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageDownloader.h",
+          'external-contents': "/Users/guoyongfeng/Documents/fed/mtlapp/node_modules/react-native-fast-image/ios/Vendor/SDWebImage/SDWebImage/SDWebImageDownloader.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageDownloaderOperation.h",
+          'external-contents': "/Users/guoyongfeng/Documents/fed/mtlapp/node_modules/react-native-fast-image/ios/Vendor/SDWebImage/SDWebImage/SDWebImageDownloaderOperation.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageManager.h",
+          'external-contents': "/Users/guoyongfeng/Documents/fed/mtlapp/node_modules/react-native-fast-image/ios/Vendor/SDWebImage/SDWebImage/SDWebImageManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageOperation.h",
+          'external-contents': "/Users/guoyongfeng/Documents/fed/mtlapp/node_modules/react-native-fast-image/ios/Vendor/SDWebImage/SDWebImage/SDWebImageOperation.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImagePrefetcher.h",
+          'external-contents': "/Users/guoyongfeng/Documents/fed/mtlapp/node_modules/react-native-fast-image/ios/Vendor/SDWebImage/SDWebImage/SDWebImagePrefetcher.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIButton+WebCache.h",
+          'external-contents': "/Users/guoyongfeng/Documents/fed/mtlapp/node_modules/react-native-fast-image/ios/Vendor/SDWebImage/SDWebImage/UIButton+WebCache.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImage+WebP.h",
+          'external-contents': "/Users/guoyongfeng/Documents/fed/mtlapp/node_modules/react-native-fast-image/ios/Vendor/SDWebImage/SDWebImage/UIImage+WebP.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImageView+HighlightedWebCache.h",
+          'external-contents': "/Users/guoyongfeng/Documents/fed/mtlapp/node_modules/react-native-fast-image/ios/Vendor/SDWebImage/SDWebImage/UIImageView+HighlightedWebCache.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImageView+WebCache.h",
+          'external-contents': "/Users/guoyongfeng/Documents/fed/mtlapp/node_modules/react-native-fast-image/ios/Vendor/SDWebImage/SDWebImage/UIImageView+WebCache.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIView+WebCache.h",
+          'external-contents': "/Users/guoyongfeng/Documents/fed/mtlapp/node_modules/react-native-fast-image/ios/Vendor/SDWebImage/SDWebImage/UIView+WebCache.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIView+WebCacheOperation.h",
+          'external-contents': "/Users/guoyongfeng/Documents/fed/mtlapp/node_modules/react-native-fast-image/ios/Vendor/SDWebImage/SDWebImage/UIView+WebCacheOperation.h"
+        }
+      ]
+    }
+  ]
+}
