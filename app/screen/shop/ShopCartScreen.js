@@ -5,10 +5,13 @@ import {
     Text
 } from 'react-native';
 
+import Header from '../../components/Header'
+
 export default class ShopCart extends Component {
     render() {
         return (
-            <View style={ styles.view }>
+            <View>
+                <Header title="订单管理" navigation={this.props.navigation} />
                 <Text>ShopCart</Text>
             </View>
         )

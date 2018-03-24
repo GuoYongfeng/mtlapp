@@ -1,11 +1,14 @@
 import { StackNavigator } from 'react-navigation'
 
 import HomeTabs from './HomeTabs'
-import LoginScreen from '../screen/login/LoginScreen'
+import LoginScreen from '../screen/account/LoginScreen'
+import GoodsScreen from '../screen/detail/GoodsScreen'
+
 
 export default StackNavigator({
     'HomeTabs': { screen: HomeTabs },
-    'LoginScreen': { screen: LoginScreen }
+    'LoginScreen': { screen: LoginScreen },
+    'Goods': { screen: GoodsScreen } 
 },{
     transitionConfig: () => ({
         screenInterpolator: sceneProps => {

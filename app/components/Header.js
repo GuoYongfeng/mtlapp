@@ -1,5 +1,7 @@
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types'
+
 import {
     StyleSheet,
     View,
@@ -42,6 +44,14 @@ export default class Header extends Component {
             </View>
         </View>
     }
+}
+
+Header.propTypes = {
+    textStyle: PropTypes.object,
+    boxStyles: PropTypes.element,
+    leftBtn: PropTypes.element,
+    title: PropTypes.string,
+    navigation: PropTypes.object.isRequired
 }
 
 const topStyles = StyleSheet.create({

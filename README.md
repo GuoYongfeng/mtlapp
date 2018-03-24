@@ -95,3 +95,20 @@ $ react-native link react-native-fast-image
 - 图片base64
 - ImageBackground：
 
+### 10、微信支付
+
+- react-native-wechat
+
+### 11、图片滚动：ScrollView、FastList
+
+- ScrollView：比较简单的列表组件，使用非常方便，在列表不长的情况下请尽量使用这个组件。
+- FastList：
+
+### 12、自定义全局 Header 组件
+
+- 考虑左侧、中间title 可配置、右侧可配置、背景色可配置
+
+### 13、图片的全屏预览和下载
+
+### 14、分享组件：分享到微信、QQ、微博等
+

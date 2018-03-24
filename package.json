@@ -17,13 +17,16 @@
     "build:ios": "打包 IOS apk"
   },
   "dependencies": {
+    "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-native": "^0.53.0",
     "react-native-fast-image": "^4.0.0",
     "react-native-root-toast": "^3.0.1",
+    "react-native-scrollable-tab-view": "^0.8.0",
     "react-native-swiper": "^1.5.13",
     "react-native-vector-icons": "^4.5.0",
+    "react-native-wechat": "^1.9.9",
     "react-navigation": "^1.5.7"
   },
   "devDependencies": {

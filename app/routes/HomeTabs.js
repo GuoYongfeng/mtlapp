@@ -54,11 +54,11 @@ export default TabNavigator({
             const { routeName } = navigation.state;
 
             if (routeName === 'HomeScreen') { 
-                return '玩事'
+                return '首页'
             } else if (routeName === 'ProductsScreen') {
-                return '应用中心'
+                return '产品分类'
             } else if (routeName === 'ShopCartScreen') {
-                return '购物中心'
+                return '购物车'
             } else if (routeName === 'UserScreen') {
                 return '我的'
             }
