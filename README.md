@@ -112,3 +112,10 @@ $ react-native link react-native-fast-image
 
 ### 14、分享组件：分享到微信、QQ、微博等
 
+### 15、Task orphaned for request <NSMutableURLRequest: [[SOME_HEX_CODE]]> { URL: [[IMG_URL]] }
+
+- 使用 FlatList（而且List 中会有Image） 的时候，会出现很多以上 Warning。
+- 
+This is also an issue when using FlatList with a list of items that contains images. Because the View gets unloaded all the time when scrolling, you will get a lot of these warnings.
+- https://github.com/facebook/react-native/issues/12152
+

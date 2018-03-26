@@ -24,6 +24,7 @@ export default class Header extends Component {
         showLeft: true
     }
     render() {
+        console.log(this.props)
         return <View style={[topStyles.header, this.props.boxStyles]}>
             {Platform.OS == 'ios' && <View style={topStyles.topBox}></View>}
             <View style={[topStyles.bar]}>
@@ -51,7 +52,7 @@ Header.propTypes = {
     boxStyles: PropTypes.element,
     leftBtn: PropTypes.element,
     title: PropTypes.string,
-    navigation: PropTypes.object.isRequired
+    navigation: PropTypes.object
 }
 
 const topStyles = StyleSheet.create({

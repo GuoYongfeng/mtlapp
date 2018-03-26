@@ -165,3 +165,46 @@ const base = StyleSheet.create({
     },
 })
 
+
+
+const DialogStyle = StyleSheet.create({
+    alert_box: {
+        width: px(600),
+        backgroundColor: "#fff",
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: px(25),
+        overflow: "hidden"
+    },
+    alert_title: {
+        paddingTop: px(40),
+    },
+    alert_title_txt: {
+        fontSize: px(34),
+    },
+    alert_body: {
+        paddingHorizontal: px(20),
+        paddingTop: px(5),
+        paddingBottom: px(30),
+        alignItems: 'center',
+    },
+    alert_body_txt: {
+        lineHeight: px(40),
+        fontSize: px(26),
+    },
+    alert_foot: {
+        borderTopWidth: px(1),
+        borderColor: "#ccc",
+        width: px(600),
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-around',
+    },
+    alert_foot_btn: {
+        width: px(300),
+        alignItems: 'center',
+        borderColor: "#ccc",
+        paddingVertical: px(30)
+    }
+})
+

@@ -11,7 +11,7 @@ export default class ShopCart extends Component {
     render() {
         return (
             <View>
-                <Header title="订单管理" navigation={this.props.navigation} />
+                <Header title="购物车" navigation={this.props.navigation} />
                 <Text>ShopCart</Text>
             </View>
         )

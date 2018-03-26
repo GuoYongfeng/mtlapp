@@ -3,7 +3,7 @@ import {
     Modal, Text, View, StyleSheet,
     TouchableOpacity, Image, Animated,
     TouchableWithoutFeedback, Platform,
-    ScrollView
+    ScrollView, Dimensions
 } from 'react-native'
 import px from '../utils/responsive'
 import toast from '../utils/toast'
@@ -190,43 +190,108 @@ export default class ImgsModal extends Component {
 }
 
 
-const DialogStyle = StyleSheet.create({
-    alert_box: {
-        width: px(600),
-        backgroundColor: "#fff",
+const base = StyleSheet.create({
+    /**
+     * 一行，居中
+     */
+    line: {
         alignItems: 'center',
         justifyContent: 'center',
-        borderRadius: px(25),
-        overflow: "hidden"
     },
-    alert_title: {
-        paddingTop: px(40),
+    position: {
+        position: 'absolute',
     },
-    alert_title_txt: {
-        fontSize: px(34),
-    },
-    alert_body: {
-        paddingHorizontal: px(20),
-        paddingTop: px(5),
-        paddingBottom: px(30),
-        alignItems: 'center',
-    },
-    alert_body_txt: {
-        lineHeight: px(40),
-        fontSize: px(26),
-    },
-    alert_foot: {
-        borderTopWidth: px(1),
-        borderColor: "#ccc",
-        width: px(600),
+    inline: {
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'space-around',
+        justifyContent: 'center',
     },
-    alert_foot_btn: {
-        width: px(300),
+    inline_between: {
+        flexDirection: 'row',
         alignItems: 'center',
-        borderColor: "#ccc",
-        paddingVertical: px(30)
+        justifyContent: 'space-between',
+    },
+    text_center: {
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    flex_middle: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    bg: {
+        flex: 1,
+        width: deviceWidth,
+        height: deviceHeight,
+        zIndex: 1
+    },
+    alertContainer: {
+        flex: 1,
+        position: 'absolute',
+        zIndex: 10,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+})
+
+
+
+const imgsStyles = StyleSheet.create({
+    view: {
+        flex: 1,
+        backgroundColor: 'rgba(0,0,0,1)',
+        justifyContent: 'center',
+    },
+    imgBox: {
+        width: deviceWidth,
+        height: deviceHeight,
+    },
+    imgItem: {
+        width: deviceWidth,
+        height: deviceHeight,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    title: {
+        color: '#fff'
+    },
+    box: {
+        position: 'absolute',
+        left: 0,
+        right: 0,
+        bottom: 0,
+        overflow: 'hidden',
+        paddingHorizontal: px(25),
+        paddingBottom: px(10)
+    },
+    btn: {
+        paddingVertical: px(25),
+        backgroundColor: '#fff',
+        borderBottomWidth: px(2),
+        borderColor: '#eee',
+        height: px(100),
+        borderRadius: px(15)
+    },
+    btnSave: {
+        color: '#d0648f'
+    },
+    cancel: {
+        marginTop: px(25),
+    },
+    btnCancel: {
+        color: '#252426'
+    },
+    pageBox: {
+        backgroundColor: 'rgba(0,0,0,.5)',
+        alignItems: 'center',
+        borderRadius: px(20),
+        right: px(30),
+        bottom: px(80),
+        paddingHorizontal: px(20),
+        paddingVertical: px(10)
+    },
+    pageTxt: {
+        color: '#fff'
     }
 })
