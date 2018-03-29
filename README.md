@@ -119,3 +119,23 @@ $ react-native link react-native-fast-image
 This is also an issue when using FlatList with a list of items that contains images. Because the View gets unloaded all the time when scrolling, you will get a lot of these warnings.
 - https://github.com/facebook/react-native/issues/12152
 
+## 16、常用 RN 组件
+
+- View：View是一个支持Flexbox布局、样式、一些触摸处理、和一些无障碍功能的容器，并且它可以放到其它的视图里，也可以有任意多个任意类型的子视图。
+- Text、Image：
+- TextInput：
+- Modal：
+- ListView：
+- FlatList：FlatList更适于长列表数据，且元素个数可以增删。和ScrollView不同的是，FlatList并不立即渲染所有元素，而是优先渲染屏幕上可见的元素。
+- TouchableOpacity：当按下的时候，封装的视图的不透明度会降低。
+- Modal：
+- TouchableWithoutFeedback： 
+- ImageBackground：
+- Dismensions: 获取当前屏幕的宽高
+- Animated：动画组件
+    - Animated.Image
+    - Animated.ScrollView
+    - Animated.Text
+    - Animated.View   
+- WebView 组件：创建一个原生的WebView，可以用于访问一个网页。
+
